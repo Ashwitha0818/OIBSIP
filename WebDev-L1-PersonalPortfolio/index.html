@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwitha Gupta | Aspiring Developer</title>
+    <meta name="description" content="Personal portfolio of Ashwitha Gupta, a student and aspiring web developer.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo" aria-label="Ashwitha Gupta Home">Ashwitha Gupta</a>
+            
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span aria-hidden="true"></span>
+            </label>
+
+            <nav class="primary-nav">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="greeting">Hi, I'm</p>
+                    <h1>Ashwitha Gupta</h1>
+                    <p class="role">Student & Aspiring Developer</p>
+                    <p class="hero-desc">I build accessible, responsive, and performant web interfaces with a strong focus on semantic HTML and modern CSS.</p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="https://github.com/Ashwitha0818" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="GitHub Profile">
+                            <svg aria-hidden="true" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12"/></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <!-- Placeholder avatar using CSS -->
+                    <div class="avatar-placeholder" aria-label="Photo of Ashwitha Gupta">
+                        <span aria-hidden="true">AG</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container about-container">
+                <div class="section-heading">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-content">
+                    <p>I am a passionate student learning the intricacies of web development. My journey started with a curiosity about how the web works, leading me to dive deep into HTML, CSS, and JavaScript.</p>
+                    <p>I believe in building interfaces that are not only visually appealing but also highly accessible and performant. As I continue to grow, I'm eager to take on new challenges and contribute to impactful projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <h2>My Skills</h2>
+                    <p>Technologies and tools I work with.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-pill">HTML5</div>
+                    <div class="skill-pill">CSS3 / Grid / Flexbox</div>
+                    <div class="skill-pill">JavaScript (ES6+)</div>
+                    <div class="skill-pill">Responsive Design</div>
+                    <div class="skill-pill">Web Accessibility (a11y)</div>
+                    <div class="skill-pill">Git & GitHub</div>
+                    <div class="skill-pill">UI/UX Basics</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Selected Projects</h2>
+                    <p>Some of the recent work I've built from scratch.</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image-placeholder" aria-label="LuminaWorkspace Project Preview"></div>
+                        <div class="project-content">
+                            <h3>LuminaWorkspace</h3>
+                            <p>A premium, responsive landing page for an ergonomic desk brand. Built strictly with HTML5 and CSS3 to demonstrate semantic structure, CSS grid, and responsive design without relying on JavaScript.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ashwitha0818" class="project-link" target="_blank" rel="noopener noreferrer">View Code &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image-placeholder" aria-label="ThermaSync Project Preview"></div>
+                        <div class="project-content">
+                            <h3>ThermaSync Converter</h3>
+                            <p>A minimalist, precise browser-based utility for temperature conversions. Features robust validation logic and accessible DOM manipulation using Vanilla JavaScript.</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Ashwitha0818" class="project-link" target="_blank" rel="noopener noreferrer">View Code &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Contact -->
+    <footer class="site-footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-cta">
+                <h2>Let's build something together.</h2>
+                <p>Feel free to reach out if you're looking for a dedicated junior developer or just want to connect.</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Ashwitha0818" class="social-btn" target="_blank" rel="noopener noreferrer">
+                    <svg aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12"/></svg>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/bonagiri-ashwitha-gupta-0b6493372" class="social-btn" target="_blank" rel="noopener noreferrer">
+                    <svg aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.924 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Ashwitha Gupta. Built with semantic HTML & CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

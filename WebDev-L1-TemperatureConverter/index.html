@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThermaSync | Precise Temperature Converter</title>
+    <meta name="description" content="A minimalist, highly precise temperature conversion utility.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="converter-wrapper">
+        <div class="converter-card">
+            <header class="converter-header">
+                <h1>ThermaSync</h1>
+                <p>Precise Temperature Conversion</p>
+            </header>
+
+            <form id="converter-form" class="converter-form" novalidate>
+                
+                <div class="input-group">
+                    <label for="temp-input">Temperature</label>
+                    <input type="number" id="temp-input" name="temp-input" step="any" placeholder="Enter value..." required aria-describedby="error-message">
+                    <!-- Inline error feedback -->
+                    <div id="error-message" class="error-message" aria-live="polite"></div>
+                </div>
+
+                <div class="controls-group">
+                    <div class="select-wrapper">
+                        <label for="unit-from">From</label>
+                        <select id="unit-from" name="unit-from">
+                            <option value="celsius" selected>Celsius (°C)</option>
+                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                            <option value="kelvin">Kelvin (K)</option>
+                        </select>
+                    </div>
+
+                    <!-- Visual swap icon (decorative) -->
+                    <div class="swap-icon" aria-hidden="true">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/>
+                        </svg>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="unit-to">To</label>
+                        <select id="unit-to" name="unit-to">
+                            <option value="fahrenheit" selected>Fahrenheit (°F)</option>
+                            <option value="celsius">Celsius (°C)</option>
+                            <option value="kelvin">Kelvin (K)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-convert">Convert</button>
+
+            </form>
+
+            <div class="result-area">
+                <p class="result-label">Result</p>
+                <!-- ARIA live region for screen readers -->
+                <div id="result-display" class="result-display" aria-live="polite">
+                    <span class="result-value">--</span>
+                    <span class="result-unit"></span>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2026 ThermaSync. Developed by Ashwitha Gupta.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
